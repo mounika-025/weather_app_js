@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-card" id="card" data-theme="light">
+        <div class="app-card-top">
+          <button class="button button-small">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <h1 class="app-heading">Wheather App</h1>
+          <button class="button button-small" id="toggler">
+            <i class="fas fa-light fa-moon" id="toggler-icon"></i>
+
+          </button>
+
+        </div>
+        <div class="app-content">
+          <button class="button button-block">
+            <span class="subtle">Period</span> <span>Today</span> 
+            <div class="button button-small"><i class="fas fa-chevron-right"></i>
+
+            </div>
+          </button>
+          <div class="button button-dail">
+            <span class="button-dail-spoke"></span>
+            <span class="button-dail-spoke"></span>
+            <span class="button-dail-spoke"></span>
+            <span class="button-dail-spoke"></span>
+            <span class="button-dail-spoke"></span>
+            <span class="button-dail-spoke"></span>
+            <div class="button-dail-top"></div>
+            <div class="button-dail-label">
+              <i class="fas fa-light fa-temperature-half"></i>
+              27&deg;C
+            </div>
+
+          </div>
+          <div class="flex-button-container">
+            <button class="button button-large">
+              <i class="fas fa-light fa-cloud-rain fa-2xl" style="color:#1885ffe3"></i>13%
+
+            </button>
+            <button class="button button-large">
+              <i class="fas fa-light fa-wind fa-2xl" style="color:#0f345fe3" id="wing"></i>6 Km/h
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+
+    </div>
     
-</body>
+  </body>
 </html>
